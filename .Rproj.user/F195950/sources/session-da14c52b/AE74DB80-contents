@@ -1,0 +1,10 @@
+---
+title: "Portfolio"
+listing:
+  contents: .
+  type: grid
+  sort: "date desc"
+  categories: true
+  fields: [image, title, description, categories]
+page-layout: full
+---

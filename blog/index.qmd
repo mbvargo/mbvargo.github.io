@@ -1,0 +1,10 @@
+---
+title: "Blog"
+listing:
+  contents: .
+  type: default
+  sort: "date desc"
+page-layout: full
+---
+
+<!-- No posts yet — the section exists so the option is there when you want it. -->

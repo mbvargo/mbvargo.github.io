@@ -1,0 +1,121 @@
+/*-- scss:defaults --*/
+
+// Core palette — straight from the print portfolio. Do not introduce new hues here;
+// derive shades/tints of $blue only if you need more range.
+$blue:       #3A59A0;
+$blue-dark:  #26407F; // darkened blue, for hover/active states only
+$blue-tint:  #EEF1FA; // ~6% blue, for subtle section separation on white — not a new color
+$yellow:     #FFD427; // accent — ONLY ever used against $blue backgrounds, never against white
+$white:      #FFFFFF;
+$black:      #000000;
+
+$body-bg:     $white;
+$body-color:  $black;
+$link-color:  $blue;
+$link-color-hover: $blue-dark;
+
+// Type — condensed/spaced display face echoing the cover treatment, clean body face
+$headline-font: "Montserrat", sans-serif;
+$body-font: "Montserrat", sans-serif;
+$mono-font: "Montserrat", monospace;
+
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headline-font;
+$headings-font-weight: 500;
+$headings-color: $black;
+
+$navbar-bg: $blue;
+$navbar-fg: $white;
+$navbar-hl: $yellow;
+
+$footer-bg: $blue;
+$footer-fg: $white;
+
+$link-decoration: none;
+
+/*-- scss:rules --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;650;700&display=swap');
+
+// Spaced, uppercase treatment for major headlines — matches "PORTFOLIO" / "MICHAEL VARGO" on the cover
+.spaced-caps {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-family: $headline-font;
+  font-weight: 700;
+}
+
+// Diagonal hero block — echoes the back-cover triangle cut
+.hero-diagonal {
+  position: relative;
+  background: $blue;
+  color: $white;
+  padding: 5rem 2rem 7rem 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+  margin-bottom: -3rem;
+
+  h1 {
+    color: $white;
+    font-size: 3.2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-subtitle {
+    color: $yellow; // yellow only appears here, against blue — never on white
+    font-family: $headline-font;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
+}
+
+// Thin wavy river-line divider — the one recurring signature motif, used quietly between sections
+.river-divider {
+  width: 100%;
+  height: 48px;
+  margin: 3rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+// Subtle section tint — derived blue, not a new color, for alternating background rhythm
+.section-tint {
+  background: $blue-tint;
+  padding: 3rem 0;
+}
+
+// Portfolio/project listing cards
+.quarto-grid-item {
+  border: none;
+  .card-title {
+    font-family: $headline-font;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .card-img-top {
+    border-bottom: 3px solid $blue;
+  }
+}
+
+// Category / metadata labels — monospace nod to the data-analytics side
+.meta-label {
+  font-family: $mono-font;
+  font-size: 0.8rem;
+  color: $blue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navbar {
+  .navbar-brand {
+    font-family: $headline-font;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 650;
+  }
+  .nav-link:hover {
+    color: $yellow !important;
+  }
+}
