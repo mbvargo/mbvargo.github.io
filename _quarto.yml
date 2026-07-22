@@ -6,6 +6,7 @@ website:
   title: "Michael Vargo"
   site-url: "https://mbvargo.github.io/" 
   description: "Urban Planning + Data Analytics"
+  favicon: images/favicon.svg
   navbar:
     background: "#3A59A0"
     foreground: "#FFFFFF"

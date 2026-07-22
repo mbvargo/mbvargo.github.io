@@ -3,7 +3,7 @@
     "path": "~/Desktop/Documents/Quarto-mbvargo/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3065302917",
     "contents": "",
     "dirty": false,
     "created": 1784486735678.0,
@@ -17,15 +17,15 @@
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
         "rmdVisualModeLocation": "92:211.81817626953125",
-        "cursorPosition": "35,0",
-        "scrollLine": "33"
+        "cursorPosition": "11,20",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1784590962,
+    "lastKnownWriteTime": 1784748760,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1784590962680,
+    "last_content_update": 1784748760580,
     "read_only": false,
     "read_only_alternatives": []
 }

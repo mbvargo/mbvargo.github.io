@@ -173,7 +173,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- TODO: bring over the write-up and figures from pages 7-12 of the PDF -->
+<p>Description: Work in progress.</p>
+<p>Please see <a href="portfolio/index.qmd">Portfolio</a> for further details.</p>
 
 
 
@@ -250,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mbvargo\.github\.io");
+        var filterRegex = new RegExp("https:\/\/mbvargo\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
