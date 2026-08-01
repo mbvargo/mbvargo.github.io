@@ -8,6 +8,7 @@ title: "Resume"
 
 [Download Resume PDF](/files/resume.pdf)
 
+<!-- 
 ### Skills & Software
 #######
 ##### Graphics & Doc Design
@@ -63,4 +64,6 @@ title: "Resume"
   — Data resources (e.g., Living Atlas) <br>
   — Experience Builder <br>
   — Insights <br>
-  — Online
+  — Online 
+
+-->

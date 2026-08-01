@@ -1,0 +1,21 @@
+---
+title: "Ithaca, NY Green Space Inventory"
+description: "NRPA Metrics of Park and Recreational Facilities | Academic Project"
+date: 2025-10-01 
+categories: [GIS, R] # TODO
+image: "/images/proj_thumbnails/topo-ith.png"
+---
+
+## Ithaca: Access to Parkland
+
+Ithaca is a small city of 30,000 residents in New York’s Finger Lakes region. The city possesses significant natural assets, a robust parks portfolio, and hosts major institutions like Cornell University.
+
+In 2018, the City of Ithaca adopted its current Parks and Recreation Master Plan to inventory local assets, guide future projects, and structure decision-makers' thinking around supply, demand, and access to facilities. However, this work contains notable omissions relevant to the planning process; green space and riverine gorges located maintained by Cornell University, while obliquely considered in the report, does not feature centrally in the City's inventory. Similarly, the surrounding region contains extensive trails, green space, and recreational facilities that are accessible to the local population, yet absent from the City's report. These omissions have consequences for the planning process and the public's understanding of local conditions. 
+
+My work is both more targeted and of a larger scope than the 2018 Master Plan. It looks more specifically at residents' access to existing parks and recreational facilities, but it also includes locations omitted from the Master Plan. 
+
+At its core, my work asks the following questions: Who has access to Ithaca’s park facilities, in what places, and to what kinds of amenities?
+
+![Topographic Map of Ithaca area with green spaces](/images/proj_thumbnails/topo-ith.png){#fig-ith_topo width="100%"}
+
+Please see [**Portfolio**](/portfolio/index.qmd) for further details. 

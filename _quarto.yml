@@ -36,6 +36,7 @@ website:
 format:
   html:
     theme: [minty, custom.scss]
+    cap-location: top 
       # light: [minty, custom-light.scss] # Eventually I'll do this
       # dark: [minty, custom-dark.scss]   # And this too
     css: styles.css

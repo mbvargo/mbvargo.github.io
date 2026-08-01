@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Web Projects"
 listing:
   contents: .
   type: grid
@@ -8,6 +8,3 @@ listing:
   fields: [image, title, description, categories]
 page-layout: full
 ---
-
-<!-- TODO: first entries once your Python roadmap projects (parcel-level zoning capacity,
-displacement/vulnerability index, pro forma tool) have something postable -->

@@ -1,11 +1,34 @@
 ---
 title: "Ohio Travel Forecast Performance"
 description: "ODOT Forecast Accuracy Assessment | Research & Technical Report"
-date: 2025-12-01 # TODO: real date
-categories: [forecasting, statistical modeling] # TODO
+date: 2025-12-01 
+categories: [forecasting, modeling, R, GIS]
 image: "/images/proj_thumbnails/ODOT-forecasting.svg"
 ---
 
-Description: Work in progress. 
+## Forecast Accuracy: A Known Unknown
 
-Please see [Portfolio](portfolio/index.qmd) for further details. 
+Traffic forecast accuracy has long been a source of uncertainty in transportation planning and research. While travel forecasting is subject to numerous factors that might impact accuracy — the volume of expected traffic, rural-urban location, availability of data, etc. — trends remain understudied, and insufficiently understood. 
+
+::: {.inset-box}
+<!-- This bit adds the corner URL link -->
+<a href="https://www.nationalacademies.org/publications/25637" class="corner-link" target="_blank" aria-label="View Source"><i class="bi bi-box-arrow-up-right"></i></a>
+
+#### Definition: Traffic Forecast
+"... projections of future traffic conditions on existing or proposed roadways. Traffic forecasts are used to inform important decisions about transportation projects, including the selection of which projects to build and certain design elements of those projects."
+
+— *NCHRP Report 934*, 2020, p. 5-1
+:::
+
+Lack of data is commonly offered as a reason for the historical lack of research into forecast accuracy, and for good reason. Before automated advances in count technology, collecting accurate data on roadway traffic was laborious, involving manual counts of cars passing along a stretch of roadway. This limiting the ability of forecasters to check their work after the fact. 
+
+Fortunately, these constraints are a thing of the past, but standards and best practices for accuracy assessment remain limited. As noted in *NCHRP Report 934*, the process for assembling these data requires considerable labor by digging through old (and often un-digitized) forecasting documents, sourcing forecast-year traffic data for road segments, and subsequently pairing segment-level forecasts to appropriate data. 
+
+### Contributions
+My work on this subject involved all elements of the process described above — including advancing the methodologies and tools to manage data once assembled. Unlike other aspects of traffic engineering, no standard software is used for this process, as data availability, formatting, and forecasting methods vary state-by-state. 
+
+For this work in the Ohio Department of Transportation's Modeling and Forecasting section, I developed custom scripts in R to facilitate the processing, analysis, and visualization of ODOT's travel forecasting data. This work resulted in the 2025 Forecast Accuracy Assessment and technical report, which was the state's first such report completed in eleven years. 
+
+![Distribution of Ohio Forecasts](/images/projects/ohio_forecasts.svg){#fig-OH_FCs width="100%"}
+
+Please see [**Portfolio**](/portfolio/index.qmd) for further details. 

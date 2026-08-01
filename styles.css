@@ -5,6 +5,36 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.indent-text {
+  padding: 0px 15px 0px 15px; 
+  margin: 20px 0; 
+  font-size: 1rem;
+}
+
+.inset-box {
+  position: relative;
+  background-color: #EEF1FA;  /* blue tint background */
+  border-left: 5px solid #3A59A0; /* Blue accent border on the left */
+  padding: 5px 40px 15px 15px;   /* Spacing inside the box */
+  margin: 20px 0;             /* Spacing outside the box */
+  border-radius: 6px;         /* Slightly rounded corners */
+  font-size: 1rem;            /* Standard text size */
+}
+
+.inset-box .corner-link {
+  position: absolute;
+  bottom: 10px;                   /* Distance from top edge */
+  right: 12px;                 /* Distance from right edge */
+  font-size: 1.25rem;          /* Icon size */
+  color: #3A59A0;              /* Muted grey color */
+  transition: color 0.35s ease; /* Smooth hover effect */
+}
+
+/* Color change when hovering over the icon */
+.inset-box .corner-link:hover {
+  color: #FFD427;              /* Changes color on hover */
+}
+
 /*
 
 .river-divider {

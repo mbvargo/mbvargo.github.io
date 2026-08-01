@@ -19,22 +19,12 @@ about:
       href: mailto:vargo.mb@gmail.com
 ---
 
-<!-- 
-  Padding: T / R / B / L
-  4rem 1rem 0rem 1rem
-  4rem 0.5rem 0rem 0.5rem
-  4rem 0rem 0rem 0rem
-  
-  4rem is for the top diagonal hero. If I get rid of this, I'll change the specs
--->
-
-<!-- display: flex; flex-direction: row; justify-content: center;  -->
 ::: {style="max-width: 900px; margin: 0 auto; padding: 0rem 0rem 0rem 0rem;"}
 ### Bio
 
 I'm an urban planner, GIS specialist, and data researcher with experience in transportation planning (particularly for transit and active mobility), sustainability initiatives for municipal land use, and data-driven policy evaluation. 
 
-I am currently seeking full-time work in private- or public-sector planning or geospatial analysis, having recently completed my Master of City and Regional Planning from The Ohio State University (2024-2026). Explore my extended [biography](About/index.qmd) or my [portfolio](portfolio/index.qmd) for more information. 
+I am currently seeking full-time work in private- or public-sector planning, data analytics, or geospatial analysis, having recently completed my Master of City and Regional Planning from The Ohio State University (2024-2026). Read more [**About Me**](/about.qmd) or see my [**Portfolio**](/portfolio/index.qmd) for more information. 
 
-Feel free to contact me regarding career opportunities with your organization. I am open to work anywhere in the US or Canada, with preferences for locations in the Great Lakes, Northeast, Pacific Northwest, or Mid-Atlantic states. 
+Feel free to contact me regarding career opportunities with your organization. I am open to work anywhere in the US or Canada, with preferences for locations in the Great Lakes or Pacific Northwest. 
 :::
