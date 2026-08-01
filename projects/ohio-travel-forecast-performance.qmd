@@ -8,7 +8,7 @@ image: "/images/proj_thumbnails/ODOT-forecasting.svg"
 
 ## Forecast Accuracy: A Known Unknown
 
-Traffic forecast accuracy has long been a source of uncertainty in transportation planning and research. While travel forecasting is subject to numerous factors that might impact accuracy — the volume of expected traffic, rural-urban location, availability of data, etc. — trends remain understudied, and insufficiently understood. 
+Traffic forecast accuracy has long been a source of uncertainty in transportation planning and research, as it is subject to many factors that can impact accuracy. These include, but aren't limited to, the volume of expected traffic, rural-urban location, availability of data, and others.Consequently, forecast accuracy constitutes a major gap in transportation research. 
 
 ::: {.inset-box}
 <!-- This bit adds the corner URL link -->
@@ -20,14 +20,14 @@ Traffic forecast accuracy has long been a source of uncertainty in transportatio
 — *NCHRP Report 934*, 2020, p. 5-1
 :::
 
-Lack of data is commonly offered as a reason for the historical lack of research into forecast accuracy, and for good reason. Before automated advances in count technology, collecting accurate data on roadway traffic was laborious, involving manual counts of cars passing along a stretch of roadway. This limiting the ability of forecasters to check their work after the fact. 
+Lack of data is often cited as the reason for limited research into forecast accuracy. This is for good reason. Collecting data on roadway traffic was labor-intensive before widespread adoption of automated count technology. ODOT and other state DOTs now maintain both permanent and rotating count stations to record traffic across road network. 
 
-Fortunately, these constraints are a thing of the past, but standards and best practices for accuracy assessment remain limited. As noted in *NCHRP Report 934*, the process for assembling these data requires considerable labor by digging through old (and often un-digitized) forecasting documents, sourcing forecast-year traffic data for road segments, and subsequently pairing segment-level forecasts to appropriate data. 
+Yet, standard methods and tools for accuracy assessment remain limited. As noted in *NCHRP Report 934*, the process for assembling these data requires considerable work by digging through old (and often undigitized) forecast documents, sourcing data on forecast-year traffic for road segments, and pairing segment-level forecasts to appropriate count data. 
 
 ### Contributions
-My work on this subject involved all elements of the process described above — including advancing the methodologies and tools to manage data once assembled. Unlike other aspects of traffic engineering, no standard software is used for this process, as data availability, formatting, and forecasting methods vary state-by-state. 
+My work on this subject involved all elements of the process described above — including advancing the methodologies and tools to manage the assembled data. Unlike other aspects of traffic engineering, no standard software is used for this process, as data availability, formatting, and forecasting methods vary state-by-state. 
 
-For this work in the Ohio Department of Transportation's Modeling and Forecasting section, I developed custom scripts in R to facilitate the processing, analysis, and visualization of ODOT's travel forecasting data. This work resulted in the 2025 Forecast Accuracy Assessment and technical report, which was the state's first such report completed in eleven years. 
+For this work in the Ohio Department of Transportation's Modeling and Forecasting section, I developed custom scripts in R to facilitate the processing, analysis, and visualization of travel forecast data. This work resulted in ODOT's 2025 Forecast Accuracy Assessment and technical report, for which I was the sole author, which was the state's first such assessment in a decade. 
 
 ![Distribution of Ohio Forecasts](/images/projects/ohio_forecasts.svg){#fig-OH_FCs width="100%"}
 

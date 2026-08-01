@@ -1,17 +1,12 @@
 ---
 title: "About Michael Vargo"
-# toc: TRUE
 ---
-
-<!-- TODO: your bio — background, degree, current role/target role, what draws you to this work -->
 
 Michael Vargo is an urban planner, GIS specialist, and data researcher based in Columbus, Ohio. 
 
-He has worked at Ohio Department of Transportation in the Division of Planning, where he authored the state's first comprehensive report on travel forecast accuracy assessment in over a decade. Findings from this assessment, along with technical materials created in support of the work, provide ODOT with a clearer understanding of trends in forecast error. This work dovetailed with research from the Federal Highway Administration into nationwide forecast accuracy, through which he collaborated with contracted research teams on the design and performance of tools for forecast accuracy assessment. 
+He has worked at Ohio Department of Transportation in the Division of Planning, where he authored the state's first comprehensive report on travel forecast accuracy assessment in over a decade. Prior to planning, Michael worked as a high school English language instructor in Guebwiller, France. He also served as a teaching assistant for a course on transportation and land use during grad school. He greatly enjoys all elements of the teaching process, whether leading instruction, designing coursework, or advising students.
 
-Prior to planning, Michael worked as a high school English language instructor in rural eastern France. He also served as a teaching assistant for a mixed graduate and undergraduate course on transportation and land use during grad school. He greatly enjoys all elements of the teaching process, whether leading instruction, designing coursework, or advising students.
-
-Michael attended the Ohio State University for his Master of City and Regional Planning, along with his Bachelor of Arts in Arabic, French, and Political Science. He also studied at Middlebury Language Schools' Arabic program.  
+Michael attended the Ohio State University for his Master of City and Regional Planning, along with his Bachelor of Arts in Arabic, French, and Political Science. He also studied at Middlebury Language Schools' Arabic program. 
 
 ### Research & Interests
 #######
@@ -60,6 +55,6 @@ Michael attended the Ohio State University for his Master of City and Regional P
 
 ### Personal
 
-Michael is originally from [Columbiana, Ohio](https://maps.app.goo.gl/hGa9aznDReuS1wzT8), where he grew up on a maple syrup and Christmas tree farm. A fan of the outdoors, he enjoys birding, biking, hiking, and bouldering, and can often be found biking along one of Central Ohio's many trails. 
+Michael is originally from [Columbiana, Ohio](https://maps.app.goo.gl/hGa9aznDReuS1wzT8), where he grew up on a maple syrup and Christmas tree farm. A fan of the outdoors, he enjoys birding, hiking, and bouldering. Michael can be found biking along one of Central Ohio's many trails in all seasons. 
 
 Michael also loves good espresso, making fun maps, and reading books in new languages (currently Portuguese). Floral button downs, German pop music, and reading the latest edition of The Economist bring him joy. 
