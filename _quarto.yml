@@ -19,8 +19,8 @@ website:
         text: Web Projects
       - href: portfolio/index.qmd
         text: Portfolio
-      # - href: blog/index.qmd # !!! TBD !!!
-      #   text: Blog
+      # - href: writing/index.qmd # !!! TBD !!!
+      #   text: Writing
       - href: resume.qmd
         text: Resume
     right:

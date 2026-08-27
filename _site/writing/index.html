@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-04-01">
-<meta name="description" content="Elm + Metcalf Site Planning | Academic Project">
 
-<title>Lima, OH Site Redevelopment – Michael Vargo</title>
+<title>Blog – Michael Vargo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,12 +70,70 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -132,39 +190,23 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lima, OH Site Redevelopment</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">development</div>
-    <div class="quarto-category">GIS</div>
-    <div class="quarto-category">R</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Elm + Metcalf Site Planning | Academic Project
-  </div>
+<h1 class="title">Blog</h1>
 </div>
 
 
-<div class="quarto-title-meta">
+
+<div class="quarto-title-meta column-page">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 1, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,107 +216,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lima-facing-the-future" class="level2">
-<h2 class="anchored" data-anchor-id="lima-facing-the-future">Lima: Facing the Future</h2>
-<p>The City of Lima, Ohio faces challenges common to many Rustbelt cities: an aging population, loss of its industrial base, and the need for economic revitalization. This proposal examines one of many sites for potential redevelopment in Lima, situated directly southeast of downtown Lima at the intersection of Elm and Metcalf Streets,&nbsp;from which the site takes its name.</p>
-<p>In this project for a graduate course on site planning, my team reimagined the Elm + Metcalf site in phases. Starting with removing vacant structures and introducing local programming, redevelopment moves to the construction of a new business venue and expanded green space. The final proposal better situates the site in its surrounding neighborhood.</p>
-<div id="fig-limazoning" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-limazoning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Lima Zoning &amp; Site Location
-</figcaption>
-<div aria-describedby="fig-limazoning-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/projects/lima_zoning.svg" class="img-fluid figure-img" style="width:100.0%">
-</div>
-</figure>
-</div>
-</section>
-<section id="site-land-use" class="level2">
-<h2 class="anchored" data-anchor-id="site-land-use">Site &amp; Land Use</h2>
-<p>Elm + Metcalf is located in a low-density neighborhood of mixed commercial and residential development. As Lima’s zoning is cumulative, housing intermingles considerably with local business – zoning does not perfectly reflect parcels’ land uses.</p>
-<p>The site is roughly divided into four quadrants. A Habitat For Humanity ReStore and its two large parking lots occupy three quarters of the site. The last section –&nbsp;in the northwest corner –&nbsp;hosts the Lima Adult Learning Center and a vacant corner parcel with two dilapidated structures. This section lies atop a high retaining wall that internally divides the site.</p>
-</section>
-<section id="design-challenges" class="level2">
-<h2 class="anchored" data-anchor-id="design-challenges">Design Challenges</h2>
-<p><strong>Topography</strong> presents the single greatest challenge to coherent site design. The retaining wall rises to more than eight feet high, severely limiting movement between except around the site’s periphery. Given the integration of uses called for in our proposal, our design includes a new stairway in the center of the site.</p>
-<p><strong>Parking</strong> issues can be abated by greater movement from the top and bottom of Elm + Metcalf. Two large parking lots take up significant space on-site, yet these are underused in off-peak business hours. Given the limited space for redevelopment in the northwest corner, our proposal includes a shared parking agreement between Elm + Metcalf’s three land owners.</p>
-<p><strong>Hydrology</strong> poses yet another challenge to site design. Evidence of ponding can be found across the site, with topography as the main culprit. Water flows inward from Metcalf into the southwest parking lot, and this is only partially captured by an internal storm drain. The northern parking lot and northwest corner also show evidence of ponding, which was reflected in the results of a hydric flow model run in the course of our analysis.</p>
-<p>With redevelopment potential concentrated on the northwest corner, design choices revolve around how a new, vibrant use impacts the site, and how the coordinated uses can work better than disperate ones do presently.</p>
-</section>
-<section id="proposal" class="level2">
-<h2 class="anchored" data-anchor-id="proposal">Proposal</h2>
-<p>Our proposal responded to these challenges and was based on the following design aims:</p>
-<div class="columns">
-<div class="column">
-<p><strong>Reactivate the Northwest Parcels</strong> <br> — Encourage development along a busy corridor <br> — Remove blighted structures; potential USTs <br></p>
-<p><strong>Expand Community &amp; Green Space</strong> <br> — A new gathering space for Lima residents <br> — Beautify the area and reduce impervious surface</p>
-<p><strong>Improve Stormwater Management</strong> <br> — Identify sites of ponding and poor flow <br> — Incorporate green infrastructure where suitable</p>
-</div><div class="column">
-<p><strong>Plan Phased Development</strong> <br> — Realistic development timelines <br> — Exploring how to better coordinate land uses</p>
-<p><strong>Unify the Site &amp; Area Identity</strong> <br> — Leverage site assets to improve the whole <br> — Reimagine Elm + Metcalf in the community</p>
-<p><strong>Coordinate Parking</strong> <br> —&nbsp; Reduce total parking on-site, especially NE lot <br> —&nbsp; Make more efficient use of existing parking</p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:65%;">
-<div id="fig-mmsd" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-mmsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Lima Adult Learning Center
-</figcaption>
-<div aria-describedby="fig-mmsd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/projects/Render-LearningCenter.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-</figure>
-</div>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:30%;">
-<div id="fig-sketch" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-sketch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: Sketch Site Design
-</figcaption>
-<div aria-describedby="fig-sketch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/projects/lima_sketch.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-</figure>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:30%;">
-<div id="fig-sanborn" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-sanborn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: Sanborn Fire Map, 1956
-</figcaption>
-<div aria-describedby="fig-sanborn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/projects/lima-1956.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-</figure>
-</div>
-</div><div class="column" style="width:5%;">
-
-</div><div class="column" style="width:65%;">
-<div id="fig-metcafe" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-metcafe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Metcafe rear with attached patio space
-</figcaption>
-<div aria-describedby="fig-metcafe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../images/projects/Render-Metcafe.png" class="img-fluid figure-img" style="width:100.0%">
-</div>
-</figure>
-</div>
-</div>
-</div>
-<p>Please see <a href="../portfolio/index.html"><strong>Portfolio</strong></a> for further details.</p>
+<!-- No posts yet — the section exists so the option is there when you want it. -->
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

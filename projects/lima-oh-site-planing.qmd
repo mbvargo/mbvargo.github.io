@@ -34,7 +34,6 @@ With redevelopment potential concentrated on the northwest corner, design choice
 ## Proposal 
 Our proposal responded to these challenges and was based on the following design aims: 
 
-::: {.
 ::: {.columns}
 
 ::: {.column}

@@ -24,7 +24,7 @@ about:
 
 I'm an urban planner, GIS specialist, and data researcher with experience in transportation, sustainable land use planning, and data-driven policy evaluation. 
 
-I am currently seeking full-time work in private- or public-sector planning, data analytics, or geospatial analysis, having recently completed my Master of City and Regional Planning from The Ohio State University (2024-2026). Read more [**About Me**](/about.qmd) or see my [**Portfolio**](/portfolio/index.qmd) for more information. 
+I am currently seeking full-time work in private- or public-sector planning, data analytics, or geospatial analysis, having recently completed my Master of City and Regional Planning from hhe Ohio State University (2024-2026). Read more [**About Me**](/about.qmd) or see my [**Portfolio**](/portfolio/index.qmd) for more information. 
 
 Feel free to contact me regarding career opportunities with your organization. 
 :::
