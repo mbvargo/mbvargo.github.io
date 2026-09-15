@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/writing/index.html",
     "items": []
   },
   {
@@ -11,9 +11,5 @@
       "/projects/ithaca-ny-nrpa-inventory.html",
       "/projects/lima-oh-site-planing.html"
     ]
-  },
-  {
-    "listing": "/writing/index.html",
-    "items": []
   }
 ]

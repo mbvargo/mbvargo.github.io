@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mbvargo.github.io/portfolio/index.html</loc>
-    <lastmod>2026-07-30T19:55:44.544Z</lastmod>
+    <loc>https://mbvargo.github.io/writing/index.html</loc>
+    <lastmod>2026-07-21T00:06:21.186Z</lastmod>
   </url>
   <url>
-    <loc>https://mbvargo.github.io/blog/index.html</loc>
-    <lastmod>2026-07-21T00:06:21.186Z</lastmod>
+    <loc>https://mbvargo.github.io/about.html</loc>
+    <lastmod>2026-09-15T00:24:36.108Z</lastmod>
   </url>
   <url>
     <loc>https://mbvargo.github.io/projects/ohio-travel-forecast-performance.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://mbvargo.github.io/resume.html</loc>
-    <lastmod>2026-07-31T17:51:21.092Z</lastmod>
+    <lastmod>2026-09-15T00:19:02.818Z</lastmod>
   </url>
   <url>
     <loc>https://mbvargo.github.io/projects/lima-oh-site-planing.html</loc>
@@ -37,11 +37,7 @@
     <lastmod>2026-08-27T22:17:57.398Z</lastmod>
   </url>
   <url>
-    <loc>https://mbvargo.github.io/about.html</loc>
-    <lastmod>2026-08-27T22:31:16.291Z</lastmod>
-  </url>
-  <url>
-    <loc>https://mbvargo.github.io/writing/index.html</loc>
-    <lastmod>2026-07-21T00:06:21.186Z</lastmod>
+    <loc>https://mbvargo.github.io/portfolio/index.html</loc>
+    <lastmod>2026-07-30T19:55:44.544Z</lastmod>
   </url>
 </urlset>
