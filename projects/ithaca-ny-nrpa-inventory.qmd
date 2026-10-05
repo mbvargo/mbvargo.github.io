@@ -16,6 +16,6 @@ My work is both more targeted and of a larger scope than the 2018 Master Plan. I
 
 At its core, my work asks the following questions: Who has access to Ithaca’s park facilities, in what places, and to what kinds of amenities?
 
-![Topographic Map of Ithaca area with green spaces](/images/proj_thumbnails/topo-ith.png){#fig-ith_topo width="100%"}
+![Topographic map of Ithaca area with green spaces](/images/proj_thumbnails/topo-ith.png){#fig-map_TOD width="100%"}
 
 Please see [**Portfolio**](/portfolio/index.qmd) for further details. 
