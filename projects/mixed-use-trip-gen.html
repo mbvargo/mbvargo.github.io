@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-01">
+<meta name="description" content="Mixed-Use Trip Gen Modeling | Assignment Design &amp; Teaching">
 
-<title>Web Projects – Michael Vargo</title>
+<title>Modeling Travel to Mixed-Use Sites – Michael Vargo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,70 +70,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,7 +101,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Web Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -190,24 +132,42 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="ZGV2ZWxvcG1lbnQ=">development <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zm9yZWNhc3Rpbmc=">forecasting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R0lT">GIS <span class="quarto-category-count">(5)</span></div><div class="category" data-category="bW9kZWxpbmc=">modeling <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(5)</span></div><div class="category" data-category="dGVhY2hpbmc=">teaching <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhbnNwb3J0YXRpb24=">transportation <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Web Projects</h1>
+<h1 class="title">Modeling Travel to Mixed-Use Sites</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">forecasting</div>
+    <div class="quarto-category">modeling</div>
+    <div class="quarto-category">transportation</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">GIS</div>
+    <div class="quarto-category">teaching</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Mixed-Use Trip Gen Modeling | Assignment Design &amp; Teaching
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,146 +177,53 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R0lTJTJDUiUyQ21vZGVsaW5n" data-listing-date-sort="1777608000000" data-listing-file-modified-sort="1786115898940" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="808">
-<a href="../projects/mke-green-infra-co-benefits.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/GI-MKE.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Green Infrastructure Co-Benefits
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
-
+<section id="mixed-use-trip-generation-info-and-context" class="level2">
+<h2 class="anchored" data-anchor-id="mixed-use-trip-generation-info-and-context">Mixed-Use Trip Generation: Info and Context</h2>
+<p>Accurately modeling traffic to a site is complex for many reasons, though some sites are made more complex by the collocation of mixed land uses. A multistory, mixed-use urban development might have multiple commercial uses on the ground floor, with upper floors occupied by housing or offices. This creates a stark divergence from the traditional process of modeling trip generation to a given location.</p>
+<p>The amount of travel to a given land use has historically been modeled using the Institute of Transportation Engineers’ (ITE) Trip Generation Manual (TGM). However, this has historically failed to account for the way that collocated uses change travelers’ behavior. For instance, if a single site contains a bank, a grocery store, a coffee shop, and upper-story residential (as one of my former apartments did), trip generation models that do not account for the collocation of these land uses may overcount the number of trips generated to a given site. This can lead to inefficient planning and design of the site and its surrounding infrastructure.</p>
+<section id="the-assignment-teaching-mixed-use-trip-gen" class="level3">
+<h3 class="anchored" data-anchor-id="the-assignment-teaching-mixed-use-trip-gen">The Assignment: Teaching Mixed-use Trip Gen</h3>
+<p>Working as a teaching assistant at the Ohio State University in the spring of 2026, I sought to reveal the complexities of mixed-use trip generation modeling to undergraduate students in a class on transportation and land use. Working at the direction of <a href="https://knowlton.osu.edu/people/santanapalacios.1">Dr.&nbsp;Manuel Santana Palacios</a>, I led assignment design and assessment using the <a href="https://www.epa.gov/smartgrowth/mixed-use-trip-generation-model">U.S. EPA’s Mixed-Use Trip Generation Model</a> (“MXD Tool”). Designed by Fehr &amp; Peers, the MXD Tool shows how mixed-use sites can reduce the total number of forecasted trips relative to the ITE Trip Generation Manual.</p>
+<section id="setting-up-the-assignment" class="level4">
+<h4 class="anchored" data-anchor-id="setting-up-the-assignment">Setting Up the Assignment</h4>
+<p>The MXD Tool requires multiple inputs to effectively compute site-specific trip generation. While I came up with some project specs, other inputs were estimated from the site’s surroundings, land use context, and open data sources. These included approximate employment figures and square footage for the nearby hospital, nursing college, administrative and office space, and other on-site amenities.</p>
+<p>Most complexly, I estimated the number of jobs within both a one-mile radius of the site and within a 30-minute door-to-door transit commute from the site. The latter figure, which the authors of the MXD Tool themselves admit can be hard to come by, required coding an accessibility analysis in <a href="https://ipeagit.github.io/r5r/">R</a> using <a href="https://github.com/conveyal/r5">Conveyal’s R5 routing engine</a>. I used employment projections by traffic analysis zone (TAZ), provided by MORPC, the Central Ohio MPO, to estimate the transit-accessible jobs for residents of the site. By using an area-weighted interpolation of the TAZs’ employment values using a 30-minute transit isochrone, students were provided with a precise, well-reasoned estimate of the jobs accessible from the site by transit services.</p>
+<div id="fig-ith_topo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Map of TOD site within the Franklinton neighborhood, Columbus
+</figcaption>
+<div aria-describedby="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/projects/map-TOD-Cbus.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
-<div class="card-text listing-description delink">
-<p>Crime Reduction from Milwaukee MSD’s GI Policy | Master’s Capstone</p>
+</figure>
 </div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Zm9yZWNhc3RpbmclMkNtb2RlbGluZyUyQ3RyYW5zcG9ydGF0aW9uJTJDUiUyQ0dJUyUyQ3RlYWNoaW5n" data-listing-date-sort="1775016000000" data-listing-file-modified-sort="1791240325585" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="648">
-<a href="../projects/mixed-use-trip-gen.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/map-TOD.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Travel to Mixed-Use Sites
-</h5>
-<div class="listing-categories">
+</section>
+<section id="assignment-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-objectives">Assignment Objectives</h4>
+<p>Provided with project specs on land uses, jobs, and residents for a proposed development in downtown Columbus, Ohio, students were tasked with the following:</p>
+<ol type="1">
+<li>Assessing the transportation context of the site, particularly how existing transit service and a proposed BRT route along US-62 (Broad Street) impact the development’s viability.</li>
+<li>Researching the land use context of the site, including the implications of recent changes to the zoning ordinance of the City of Columbus.</li>
+<li>Evaluating forecasted trip generation of two model scenarios: first for the new development, and second for the site in its immediate land use context. Surroundings included a hospital, a small nursing college, offices and administrative buildings, and an existing residential structure.</li>
+<li>Explaining how results change as the MXD Tool accounts for collocated land uses.</li>
+<li>Discussing the benefits and limitations of the EPA’s MXD Tool.</li>
+</ol>
+</section>
+<section id="learning-outcomes" class="level4">
+<h4 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h4>
+<ol type="1">
+<li>Improving students’ understanding of travel demand models, how land use influences travel behavior, and complications in modeling trip generation.</li>
+<li>Practicing assessment techniques, critical writing, and analysis regarding land use ordinances, site design, and transportation systems.</li>
+<li>Experience synthesizing information about a real-world project by offering sharp analyses and defensible judgements on a proposed development.</li>
+</ol>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rpbmc='); return false;">forecasting</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
+</section>
+</section>
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNwb3J0YXRpb24='); return false;">transportation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVhY2hpbmc='); return false;">teaching</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Mixed-Use Trip Gen Modeling | Assignment Design &amp; Teaching</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Zm9yZWNhc3RpbmclMkNtb2RlbGluZyUyQ1IlMkNHSVM=" data-listing-date-sort="1764565200000" data-listing-file-modified-sort="1791221587393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="335">
-<a href="../projects/ohio-travel-forecast-performance.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/ODOT-forecasting.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ohio Travel Forecast Performance
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rpbmc='); return false;">forecasting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>ODOT Forecast Accuracy Assessment | Research &amp; Technical Report</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="R0lTJTJDUg==" data-listing-date-sort="1759291200000" data-listing-file-modified-sort="1791239957772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
-<a href="../projects/ithaca-ny-nrpa-inventory.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/topo-ith.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ithaca, NY Green Space Inventory
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>NRPA Metrics of Park and Recreational Facilities | Academic Project</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="ZGV2ZWxvcG1lbnQlMkNHSVMlMkNS" data-listing-date-sort="1743480000000" data-listing-file-modified-sort="1785625926737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="605">
-<a href="../projects/lima-oh-site-planing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/lima_zoning.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lima, OH Site Redevelopment
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGV2ZWxvcG1lbnQ='); return false;">development</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Elm + Metcalf Site Planning | Academic Project</p>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
