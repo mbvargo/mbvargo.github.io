@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-01">
+<meta name="description" content="Comparing BRT &amp; Rail Service in Portland, OR | Technical Analysis">
 
-<title>Web Projects – Michael Vargo</title>
+<title>Rapid Transit Residential Coverage Analysis – Michael Vargo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,70 +70,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -159,7 +101,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Web Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -190,24 +132,39 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="ZGV2ZWxvcG1lbnQ=">development <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Zm9yZWNhc3Rpbmc=">forecasting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R0lT">GIS <span class="quarto-category-count">(6)</span></div><div class="category" data-category="bW9kZWxpbmc=">modeling <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(6)</span></div><div class="category" data-category="dGVhY2hpbmc=">teaching <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dHJhbnNwb3J0YXRpb24=">transportation <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Web Projects</h1>
+<h1 class="title">Rapid Transit Residential Coverage Analysis</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">transportation</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">GIS</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Comparing BRT &amp; Rail Service in Portland, OR | Technical Analysis
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -217,173 +174,36 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="R0lTJTJDUiUyQ21vZGVsaW5n" data-listing-date-sort="1777608000000" data-listing-file-modified-sort="1786115898940" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="808">
-<a href="../projects/mke-green-infra-co-benefits.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/GI-MKE.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Green Infrastructure Co-Benefits
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
-
+<section id="residential-coverage-one-dimension-of-transit-potential" class="level2">
+<h2 class="anchored" data-anchor-id="residential-coverage-one-dimension-of-transit-potential">Residential Coverage: One Dimension of Transit Potential</h2>
+<p>Transit service in the United States faces many challenges –&nbsp;limited funding, declining ridership post-COVID, and North America’s sprawling land use patterns all constrain the effectiveness of public transit. Given these challenges and the goal of providing efficient public services, transit agencies face a critical choice: prioritizing either coverage or ridership.</p>
+<p>In <em>Human Transit</em>, Jarrett Walker describes this dichotomy as follows:</p>
+<div class="inset-box">
+<!-- This bit adds the corner URL link -->
+<p><a href="https://press.princeton.edu/books/paperback/9781642833058/human-transit-revised-edition?srsltid=AU7gw4Wu43xxlrYiQldL02WuMavFMeUEHs2xbX2wXV1vA2dH4k-kH5lz" class="corner-link" target="_blank" aria-label="View Source"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p>“Transit also faces a contradictory mission. You can see it in two types of goals that most agencies adopt but rarely reconcile. Most agencies have two goals that sound something like this:</p>
+<ol type="1">
+<li>Serve all parts of our community.</li>
+<li>Maximize ridership with our fixed service budget.”</li>
+</ol>
+<p>— <em>Human Transit</em>, 2012, p.&nbsp;118</p>
 </div>
-<div class="card-text listing-description delink">
-<p>Crime Reduction from Milwaukee MSD’s GI Policy | Master’s Capstone</p>
+<p>In the process of transit planning and design, determining the right allocation of resources is key. Cities have many neighborhoods whose residents ought to be served, even if ridership there isn’t very high. Similarly, transit planners must know whether existing resources would be better spent in a more productive location. Residential coverage analyses are simply one tool used to understand this tradeoff. By assessing the number of residents, households, and structures within range of a transit stop, we can start to see which routes possess higher or lower ridership potential.</p>
+<div id="fig-ith_topo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Map of residential coverage along Portland Trimet’s MAX Yellow Line and the FX2 Division BRT
+</figcaption>
+<div aria-describedby="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/projects/map-PDX.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
+</figure>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Zm9yZWNhc3RpbmclMkNtb2RlbGluZyUyQ3RyYW5zcG9ydGF0aW9uJTJDUiUyQ0dJUyUyQ3RlYWNoaW5n" data-listing-date-sort="1775016000000" data-listing-file-modified-sort="1791248395951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="648">
-<a href="../projects/mixed-use-trip-gen.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/map-TOD.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Modeling Travel to Mixed-Use Sites
-</h5>
-<div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rpbmc='); return false;">forecasting</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNwb3J0YXRpb24='); return false;">transportation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVhY2hpbmc='); return false;">teaching</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Mixed-Use Trip Gen Modeling | Assignment Design &amp; Teaching</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="dHJhbnNwb3J0YXRpb24lMkNSJTJDR0lT" data-listing-date-sort="1772341200000" data-listing-file-modified-sort="1791255090588" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="229">
-<a href="../projects/trimet-residential-coverage.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/map-trimet-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Rapid Transit Residential Coverage Analysis
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNwb3J0YXRpb24='); return false;">transportation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Comparing BRT &amp; Rail Service in Portland, OR | Technical Analysis</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Zm9yZWNhc3RpbmclMkNtb2RlbGluZyUyQ1IlMkNHSVMlMkN0cmFuc3BvcnRhdGlvbg==" data-listing-date-sort="1764565200000" data-listing-file-modified-sort="1791252577100" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="335">
-<a href="../projects/ohio-travel-forecast-performance.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/ODOT-forecasting.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ohio Travel Forecast Performance
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rpbmc='); return false;">forecasting</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9kZWxpbmc='); return false;">modeling</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dHJhbnNwb3J0YXRpb24='); return false;">transportation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>ODOT Forecast Accuracy Assessment | Research &amp; Technical Report</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="R0lTJTJDUg==" data-listing-date-sort="1759291200000" data-listing-file-modified-sort="1791239957772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
-<a href="../projects/ithaca-ny-nrpa-inventory.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/topo-ith.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ithaca, NY Green Space Inventory
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>NRPA Metrics of Park and Recreational Facilities | Academic Project</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="ZGV2ZWxvcG1lbnQlMkNHSVMlMkNS" data-listing-date-sort="1743480000000" data-listing-file-modified-sort="1785625926737" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="605">
-<a href="../projects/lima-oh-site-planing.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../images/proj_thumbnails/lima_zoning.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Lima, OH Site Redevelopment
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGV2ZWxvcG1lbnQ='); return false;">development</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Elm + Metcalf Site Planning | Academic Project</p>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
