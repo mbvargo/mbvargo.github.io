@@ -1,0 +1,31 @@
+---
+title: "Rapid Transit Residential Coverage Analysis"
+description: "Comparing BRT & Rail Service in Portland, OR | Technical Analysis"
+date: 2026-03-01
+categories: [transportation, R, GIS]
+image: "/images/proj_thumbnails/map-trimet-thumb.png"
+---
+
+## Residential Coverage: One Dimension of Transit Potential
+
+Transit service in the United States faces many challenges – limited funding, declining ridership post-COVID, and North America's sprawling land use patterns all constrain the effectiveness of public transit. Given these challenges and the goal of providing efficient public services, transit agencies face a critical choice: prioritizing either coverage or ridership. 
+
+In *Human Transit*, Jarrett Walker describes this dichotomy as follows: 
+
+::: {.inset-box}
+<!-- This bit adds the corner URL link -->
+<a href="https://press.princeton.edu/books/paperback/9781642833058/human-transit-revised-edition?srsltid=AU7gw4Wu43xxlrYiQldL02WuMavFMeUEHs2xbX2wXV1vA2dH4k-kH5lz" class="corner-link" target="_blank" aria-label="View Source"><i class="bi bi-box-arrow-up-right"></i></a>
+
+"Transit also faces a contradictory mission. You can see it in two types of
+goals that most agencies adopt but rarely reconcile. Most agencies have two
+goals that sound something like this:
+
+1. Serve all parts of our community.
+2. Maximize ridership with our fixed service budget."
+
+— *Human Transit*, 2012, p. 118
+:::
+
+In the process of transit planning and design, determining the right allocation of resources is key. Cities have many neighborhoods whose residents ought to be served, even if ridership there isn't very high. Similarly, transit planners must know whether existing resources would be better spent in a more productive location. Residential coverage analyses are simply one tool used to understand this tradeoff. By assessing the number of residents, households, and structures within range of a transit stop, we can start to see which routes possess higher or lower ridership potential. 
+
+![Map of residential coverage along Portland Trimet's MAX Yellow Line and the FX2 Division BRT](/images/projects/map-PDX.png){#fig-ith_topo width="100%"}

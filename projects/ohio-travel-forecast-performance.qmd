@@ -2,7 +2,7 @@
 title: "Ohio Travel Forecast Performance"
 description: "ODOT Forecast Accuracy Assessment | Research & Technical Report"
 date: 2025-12-01 
-categories: [forecasting, modeling, R, GIS]
+categories: [forecasting, modeling, R, GIS, transportation]
 image: "/images/proj_thumbnails/ODOT-forecasting.svg"
 ---
 

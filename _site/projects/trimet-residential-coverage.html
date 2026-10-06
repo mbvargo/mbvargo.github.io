@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-01">
+<meta name="description" content="Comparing BRT &amp; Rail Service in Portland, OR | Technical Analysis">
 
-<title>Michael Vargo</title>
+<title>Rapid Transit Residential Coverage Analysis – Michael Vargo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-62f7dd41fc206cbf1fa14f9361cf0bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-30ecfaa1b80f263e9a930d6ea7050d76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-62f7dd41fc206cbf1fa14f9361cf0bb8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-30ecfaa1b80f263e9a930d6ea7050d76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -79,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Michael Vargo</span>
     </a>
   </div>
@@ -90,23 +93,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects/index.html"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Web Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portfolio/index.html"> 
+    <a class="nav-link" href="../portfolio/index.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resume.html"> 
+    <a class="nav-link" href="../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
@@ -134,47 +137,82 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/headshot.JPG" class="about-image
-  rounded " style="width: 20em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Michael Vargo</h1>
-<p class="subtitle lead">Urban Planning + Data Analytics</p>
+<h1 class="title">Rapid Transit Residential Coverage Analysis</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">transportation</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">GIS</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Comparing BRT &amp; Rail Service in Portland, OR | Technical Analysis
+  </div>
 </div>
+
+
 <div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2026</p>
+    </div>
   </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/mbvargo" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/mbvargo" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:vargo.mb@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
+
+
+<section id="residential-coverage-one-dimension-of-transit-potential" class="level2">
+<h2 class="anchored" data-anchor-id="residential-coverage-one-dimension-of-transit-potential">Residential Coverage: One Dimension of Transit Potential</h2>
+<p>Transit service in the United States faces many challenges –&nbsp;limited funding, declining ridership post-COVID, and North America’s sprawling land use patterns all constrain the effectiveness of public transit. Given these challenges and the goal of providing efficient public services, transit agencies face a critical choice: prioritizing either coverage or ridership.</p>
+<p>In <em>Human Transit</em>, Jarrett Walker describes this dichotomy as follows:</p>
+<div class="inset-box">
+<!-- This bit adds the corner URL link -->
+<p><a href="https://press.princeton.edu/books/paperback/9781642833058/human-transit-revised-edition?srsltid=AU7gw4Wu43xxlrYiQldL02WuMavFMeUEHs2xbX2wXV1vA2dH4k-kH5lz" class="corner-link" target="_blank" aria-label="View Source"><i class="bi bi-box-arrow-up-right"></i></a></p>
+<p>“Transit also faces a contradictory mission. You can see it in two types of goals that most agencies adopt but rarely reconcile. Most agencies have two goals that sound something like this:</p>
+<ol type="1">
+<li>Serve all parts of our community.</li>
+<li>Maximize ridership with our fixed service budget.”</li>
+</ol>
+<p>— <em>Human Transit</em>, 2012, p.&nbsp;118</p>
 </div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<section id="bio" class="level3" style="max-width: 900px; margin: 0 auto; padding: 0rem 0rem 0rem 0rem;">
-<h3 data-anchor-id="bio">Bio</h3>
-<p>I’m an urban planner, GIS specialist, and data researcher with experience in transportation, sustainable land use planning, and data-driven policy evaluation.</p>
-<p>I am currently seeking full-time work in private- or public-sector planning, data analytics, or geospatial analysis, having recently completed my Master of City and Regional Planning from the Ohio State University (2024-2026). Read more <a href="./about.html"><strong>About Me</strong></a> or see my <a href="./portfolio/index.html"><strong>Portfolio</strong></a> for more information.</p>
-<p>Feel free to contact me regarding career opportunities with your organization.</p>
+<p>In the process of transit planning and design, determining the right allocation of resources is key. Cities have many neighborhoods whose residents ought to be served, even if ridership there isn’t very high. Similarly, transit planners must know whether existing resources would be better spent in a more productive location. Residential coverage analyses are simply one tool used to understand this tradeoff. By assessing the number of residents, households, and structures within range of a transit stop, we can start to see which routes possess higher or lower ridership potential.</p>
+<div id="fig-ith_topo" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Map of residential coverage along Portland Trimet’s MAX Yellow Line and the FX2 Division BRT
+</figcaption>
+<div aria-describedby="fig-ith_topo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/projects/map-PDX.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+</figure>
+</div>
+
+
 </section>
 
-
-</main></div>
-</div>
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
