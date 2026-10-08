@@ -28,4 +28,4 @@ goals that sound something like this:
 
 In the process of transit planning and design, determining the right allocation of resources is key. Cities have many neighborhoods whose residents ought to be served, even if ridership there isn't very high. Similarly, transit planners must know whether existing resources would be better spent in a more productive location. Residential coverage analyses are simply one tool used to understand this tradeoff. By assessing the number of residents, households, and structures within range of a transit stop, we can start to see which routes possess higher or lower ridership potential. 
 
-![Map of residential coverage along Portland Trimet's MAX Yellow Line and the FX2 Division BRT](/images/projects/map-PDX.png){#fig-ith_topo width="100%"}
+![Map of residential coverage along Portland TriMet's MAX Yellow Line and the FX2 Division BRT](/images/projects/map-PDX.png){#fig-ith_topo width="100%"}
